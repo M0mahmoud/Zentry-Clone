@@ -1,6 +1,11 @@
+import Hero from "./components/Hero";
+
 function App() {
     return (
-        <h1 className="text-3xl font-bold font-circular-web">Setup Project!</h1>
+        <main className="relative w-screen min-h-screen overflow-x-hidden">
+            <Hero />
+            <section className=" min-h-[200vh]" />
+        </main>
     );
 }
 
