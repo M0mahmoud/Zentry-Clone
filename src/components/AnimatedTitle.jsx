@@ -1,0 +1,55 @@
+import clsx from "clsx";
+import gsap from "gsap";
+import React, { useEffect, useRef } from "react";
+
+export default function AnimatedTitle({ title, containerClass }) {
+    const containerRef = useRef(null);
+
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            const titleAnimation = gsap.timeline({
+                scrollTrigger: {
+                    trigger: containerRef.current,
+                    start: "100 bottom",
+                    end: "center bottom",
+                    toggleActions: "play none none reverse",
+                },
+            });
+            titleAnimation.to(
+                ".animated-word",
+                {
+                    opacity: 1,
+                    transform:
+                        "translate3d(0, 0, 0) rotateY(0deg) rotateX(0deg)",
+                    ease: "power2.inOut",
+                    stagger: 0.02,
+                },
+                0,
+            );
+        }, containerRef);
+
+        // Clean up
+        return () => ctx.revert();
+    }, []);
+    return (
+        <div
+            ref={containerRef}
+            className={clsx("animated-title", containerClass)}
+        >
+            {title.split("<br />").map((line, index) => (
+                <div
+                    key={index}
+                    className="flex-wrap max-w-full gap-2 px-10 flex-center md:gap-3"
+                >
+                    {line.split(" ").map((word, idx) => (
+                        <span
+                            key={idx}
+                            className="animated-word"
+                            dangerouslySetInnerHTML={{ __html: word }}
+                        />
+                    ))}
+                </div>
+            ))}
+        </div>
+    );
+}
