@@ -1,8 +1,23 @@
-# React + Vite
+# **React App with GSAP and Tailwind CSS**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a modern React application designed with GSAP animations, Tailwind CSS for styling, and a structured component-based architecture. The app consists of sections like Navbar, Hero, About, Features, Story, Contact, and Footer to showcase its functionality.
 
-Currently, two official plugins are available:
+## **Demo**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out the live demo of the application: [View Demo](https://zentry05.vercel.app)
+
+## **Features**
+
+-   **Fully Responsive Design**: Built with Tailwind CSS for mobile-first responsiveness.
+-   **Smooth Animations**: Powered by GSAP for interactive animations.
+-   **Component-Based Architecture**: Modular and reusable components like `Navbar`, `Hero`, `About`, and more.
+-   **Accessibility**: Includes semantic HTML and ARIA attributes for better accessibility.
+-   **Modern Development Workflow**: Uses Vite for fast development and efficient builds.
+
+## **Technologies Used**
+
+-   **React**: Library for building user interfaces.
+-   **Tailwind CSS**: Utility-first CSS framework for styling.
+-   **GSAP**: Library for animations.
+-   **clsx**: Utility for conditionally joining class names.
+-   **react-use**: Collection of essential React hooks.
