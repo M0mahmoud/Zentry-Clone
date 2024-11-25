@@ -41,7 +41,7 @@ export default function About() {
                     <p>
                         The Game of Games begins—your life, now an epic MMORPG
                     </p>
-                    <p className="text-gray-500">
+                    <p className="text-[#2C2F35]">
                         Zentry unites every player from countless games and
                         platforms, both digital and physical, into a unified
                         Play Economy
@@ -55,6 +55,7 @@ export default function About() {
                         src="img/about.webp"
                         alt="Background"
                         className="absolute top-0 left-0 object-cover size-full"
+                        loading="lazy"
                     />
                 </div>
             </div>

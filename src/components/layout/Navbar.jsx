@@ -41,7 +41,12 @@ export default function Navbar() {
             <header className="absolute w-full -translate-y-1/2 top-1/2">
                 <nav className="flex items-center justify-between p-4 size-full">
                     <div className="flex items-center gap-7">
-                        <img src="/img/logo.png" alt="logo" className="w-10" />
+                        <img
+                            src="/img/logo.png"
+                            alt="logo"
+                            className="w-10"
+                            loading="lazy"
+                        />
                         <Button
                             id={"products"}
                             title={"Products"}

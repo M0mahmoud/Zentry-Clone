@@ -70,6 +70,7 @@ export default function Story() {
                                     src="/img/entrance.webp"
                                     alt="entrance.webp"
                                     className="object-contain"
+                                    loading="lazy"
                                 />
                             </div>
                         </div>

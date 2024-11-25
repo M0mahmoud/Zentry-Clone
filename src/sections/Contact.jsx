@@ -51,7 +51,7 @@ export default function Contact() {
 function ImageClipBox({ src, clipClass }) {
     return (
         <div className={clipClass}>
-            <img src={src} />
+            <img src={src} loading="lazy" alt="Image Clip Box" />
         </div>
     );
 }

@@ -69,6 +69,7 @@ export default function Footer() {
                 <div className="flex justify-center gap-4 md:justify-start">
                     {SOCIALLINKS.map((link, index) => (
                         <a
+                            aria-label="SOCIALLINK"
                             key={index}
                             href={link.href}
                             target="_blank"
