@@ -1,5 +1,6 @@
-export const TiLocationArrow = () => (
+export const TiLocationArrow = ({ className }) => (
     <svg
+        className={className}
         stroke="currentColor"
         fill="currentColor"
         strokeWidth="0"
