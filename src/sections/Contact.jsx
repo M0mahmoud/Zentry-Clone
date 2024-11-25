@@ -1,6 +1,6 @@
 import React from "react";
-import AnimatedTitle from "./AnimatedTitle";
-import Button from "./Button";
+import AnimatedTitle from "../components/AnimatedTitle";
+import Button from "../components/Button";
 
 export default function Contact() {
     return (

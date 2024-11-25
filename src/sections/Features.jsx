@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { TiLocationArrow } from "./Icons";
+import { TiLocationArrow } from "../components/Icons";
 
 export default function Features() {
     return (

@@ -2,8 +2,9 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import React, { useEffect, useRef, useState } from "react";
-import Button from "./Button";
-import { TiLocationArrow } from "./Icons";
+import Button from "../components/Button";
+import { TiLocationArrow } from "../components/Icons";
+import Loader from "../components/Loader";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,18 +79,7 @@ export default function Hero() {
 
     return (
         <section className="relative w-screen overflow-x-hidden h-dvh">
-            {loading && (
-                <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
-                    <div className="spinner">
-                        <div />
-                        <div />
-                        <div />
-                        <div />
-                        <div />
-                        <div />
-                    </div>
-                </div>
-            )}
+            {loading && <Loader />}
             <div
                 id="video-frame"
                 className="relative z-10 w-screen overflow-hidden rounded-lg h-dvh bg-blue-75"

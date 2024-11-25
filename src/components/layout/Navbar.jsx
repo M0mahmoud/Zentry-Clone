@@ -1,8 +1,8 @@
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
 import { useWindowScroll } from "react-use";
-import Button from "./Button";
-import { TiLocationArrow } from "./Icons";
+import Button from "../Button";
+import { TiLocationArrow } from "../Icons";
 
 const navItems = ["Nexus", "Vault", "Prologue", "About", "Contact"];
 
