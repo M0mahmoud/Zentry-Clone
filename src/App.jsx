@@ -1,6 +1,7 @@
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Story from "./components/Story";
@@ -14,7 +15,7 @@ function App() {
             <Features />
             <Story />
             <Contact />
-            <section className=" min-h-[200vh]" />
+            <Footer />
         </main>
     );
 }
